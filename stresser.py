@@ -73,7 +73,7 @@ def dos2():
 
 def usage():
 	print (''' \033[92mMercureStresser \n • Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
-	MercureStresser • Uzyj: python stresser.py  <ip> <port> <pakiety>\033[0m''')
+	MercureStresser • Uzyj: python stresser.py -s <serwer> -p <port> -t (pakiety)\033[0m''')
 	sys.exit()
 
 
