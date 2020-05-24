@@ -73,12 +73,10 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92m	Hammer Dos Script v.1 http://www.canyalcin.com/
-	It is the end user's responsibility to obey all applicable laws.
-	It is just for server testing script. Your ip is visible. \n
+	print (''' \033[92mMercureStresser \n Wersja • 0.1 \n Autor: Mercure \nAlpha Able v0.1 \n
 	MercureStresser • Uzyj: python3 stresser.py -s <IP> -p <port> -t <szybkość>
 	-h : • Pomoc •
-	-s : • IP •
+	-s : • IP  •
 	-p : • Port •
 	-t : • Szybkosc • Best 100 •\033[0m''')
 	sys.exit()
