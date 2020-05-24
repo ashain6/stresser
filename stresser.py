@@ -73,7 +73,7 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92mMercureStresser \n Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
+	print (''' \033[92mMercureStresser \n • Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
 	MercureStresser • Uzyj: python3 stresser.py -s <IP> -p <port> -t <szybkość>
 	-h : • Pomoc •
 	-s : • IP  •
