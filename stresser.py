@@ -125,7 +125,7 @@ if __name__ == '__main__':
 	if len(sys.argv) < 2:
 		usage()
 	get_parameters()
-	print("\033[92m",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
+	print("\033[92mMercureStresser • Trwa atak na ",host," port: ",str(port)," turbo: ",str(thr),"\033[0m")
 	print("\033[94mMercureStresser • Poczekaj...\033[0m")
 	user_agent()
 	my_bots()
